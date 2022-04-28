@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | page</title>
+</head>
+<style>
+    div
+    {
+        background-color: cyan;
+        font-size: 25px;
+        width: 600px;
+        height: 350px;
+        border: 1px solid black;
+        padding-left: 10px;
+        border-radius: 5px; 
+        
+    }
+    div .question
+    {
+        background-color: red;
+        font-size: 25px;
+        width: 580px;
+        height: 120px;
+        border: 1px solid black;
+        padding-right: -50px; 
+        border-radius: 5px; 
+    }
+    .distance
+    {
+        border: 1px solid black;
+        width: 200px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 200px;
+    }
+</style>
+<body>
+    <div>
+    <p class="question">The distance between two cities (in km.) is input through the keyboard. Write a program to convert and print this distance in meters, feet, inches and centimeters.</p>
+    <p class="distance">Distance is 10km</p>
+
+<script>
+    var meters, feet, inches, km,centimeters;
+   km=parseInt(prompt("Please Enter km between two cities"));
+    meters=km*1000
+    feet=km*3280.84
+    inches=km*39370.1
+    centimeters=km*100000
+    document.write("Total distance in meters=" +meters+"<br>");
+    document.write("Total distance in feet=" +feet+"<br>");
+    document.write("Total distance in inches=" +inches+"<br>");
+    document.write("Total distance in centimeters=" +centimeters+"<br>");
+
+</script>
+</div>
+</body>
+
+
+</html>
